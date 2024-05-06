@@ -1,0 +1,7 @@
+@media only screen and (min-width: 992px) {
+    .foto2,
+    .foto3 {
+      display: none;
+    }
+  }
+  

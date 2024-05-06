@@ -1,0 +1,50 @@
+@media only screen and (max-width: 675px) {
+  .full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(9, 65, 57, 0.897);
+   
+  }
+  h1 {
+    margin-top: 20px; /* Geser h1 ke bawah */
+  }
+    
+  /* Keyframes untuk animasi fadeInRight */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .foto2 img {
+    width: 160px; /* Lebar foto */
+    height: 160px; /* Tinggi foto */
+    border-radius: 20%; /* Menghasilkan bentuk bulat */
+    overflow: hidden; /* Agar gambar tidak melampaui batas frame */
+    margin-left: 100px; /* Geser foto ke kanan */
+    box-shadow: 0 4px 6px rgba(255, 230, 90, 0.664); /* Tambahkan efek bayangan */
+    background-color: transparent; /* Hilangkan latar belakang foto */
+    animation: fadeInRight 1s ease; /* Menambahkan animasi */
+  }
+  
+}
+
+@media only screen and (min-width: 676px) and (max-width: 991px) {
+  /* Sembunyikan foto pada tampilan laptop dan tablet */
+  .foto2 {
+    display: none;
+  }
+
+}
+
+
